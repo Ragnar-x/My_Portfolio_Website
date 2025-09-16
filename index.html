@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tshiamo Lekuba Portfolio</title>
+    <meta name="description" content="The Portfolio website of Tshiamo Lekuba.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&family=Monsieur+La+Doulaise&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+        <header id="home">
+            <div class="video-background">
+            <video loop autoplay muted>
+            <source src="media/header_background.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="first-content">
+             <h1 class="headline"><strong>Tshiamo Lekuba</strong></h1>
+             <h2 class="subtext">I design & build websites that don’t just exist — they perform.</h2>
+             <button class="CTA"><a href="#projects" class="CTA-button">View my work</a></button>
+            </div>
+        </header>
+    <main>
+       <nav>
+  <div class="logo">TshiamoLekuba</div>
+  <ul class="nav-links">
+    <!-- Exit button (only visible on mobile) -->
+    <li class="close-btn" onclick="toggleMenu()">&#10005;</li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about-me">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <!-- Hamburger -->
+  <div class="hamburger" onclick="toggleMenu()">
+    &#9776;
+  </div>
+</nav>
+
+        <section id="about-me" class="hidden">
+            <h3>About Me</h3>
+            <div class="about-box">
+                <p>Hi, I’m Tshiamo — a self-taught front-end web developer from South Africa with a growing foundation in Computer Science. I have a passion for turning ideas into digital experiences and thrive on creating clean, functional, and visually engaging websites. I’m passionate about mixing graphic design with UI/UX design, because I enjoy both the creative and problem-solving sides of building digital experiences.
+I consider myself a lifetime student, always eager to learn and grow. The idea of building algorithms and creating things with code excites me, and I thrive on turning abstract concepts into functional, engaging solutions. For me, combining creativity with art is not just a process — it’s the foundation of how I approach design and development.
+I look forward to collaborating on projects where I can bring fresh ideas, precision, and creativity to the table.</p>
+                <img src="media/profile.jpg" alt="Profile Image">
+            </div>
+        </section>
+        <section id="skills" class="hidden">
+            <h3>Skills</h3>
+            <ul class="skills-box">
+                <li class="skills">
+                    <img src="media/html.png" alt="">
+                </li>
+                <li class="skills">
+                    <img src="media/text.png" alt="">
+                </li>
+                <li class="skills">
+                    <img src="media/js.png" alt="">
+                </li>
+                <li class="skills">
+                    <img src="media/science.png" alt="">
+                </li>
+                <li class="skills">
+                    <img src="media/figma.png" alt="">
+                </li>
+            </ul>
+        </section>
+        <section id="projects" class="hidden">
+          <h3 class="projects-heading">Projects</h3> 
+          <div class="project-container"> 
+            <div class="firstproject"> 
+              <h4>To-Do App Design</h4>
+              <a href="https://ragnar-x.github.io/Todo_app/" target="_blank">
+              <img src="media/to_do.png" alt="">
+              </a>
+            </div> <div class="secondproject"> 
+              <h4>Calculator Design</h4>
+              <a href="https://ragnar-x.github.io/calculator-design/" target="_blank">
+              <img src="media/untitled_design_(2).png" alt=""> 
+              </a>
+            </div> <div class="thirdproject"> 
+              <h4>Landing Page Design</h4>
+              <a href="https://ragnar-x.github.io/landing_page/" target="_blank">
+              <img src="media/untitled_design.png" alt=""> 
+              </a>
+            </div> 
+          </div>
+        </section>
+        <section id="pricing" class="hidden">
+            <h3>Pricing</h3>
+            <div class="pricing-cards">
+                <ul class="pricing-card">
+                    <li class="pricing-heading">Basic Plan</li>
+                    <li>1-page responsive landing page</li>
+                    <li>Custom design</li>
+                    <li>Contact form</li>
+                    <li>Social media links integration</li>
+                    <li>Free SSL certificate setup</li>
+                    <li>Hosting/domain guidance</li>
+                    <li>1 round of revisions</li>
+                    <li><strong>R800–R1,200 (or ~$50–$80 internationally)</strong></li>
+                </ul>
+                <ul class="pricing-card">
+                    <li class="pricing-heading">Standard Plan</li>
+                    <li>Everything basic + 3 pages</li>
+                    <li>Basic SEO setup</li>
+                    <li>Image optimization</li>
+                    <li>Google Maps embed</li>
+                    <li>WhatsApp/call button</li>
+                    <li>2–3 rounds of revisions</li>
+                    <li>Domain + hosting setup included</li>
+                    <li><strong>R1,500–R2,500 (or ~$100–$150 internationally)</strong></li>
+                </ul>
+                <ul class="pricing-card">
+                    <li class="pricing-heading">Premium Plan</li>
+                    <li>Everything standard + 5 pages</li>
+                    <li>Booking system / inquiry form</li>
+                    <li>Copywriting assistance</li>
+                    <li>Free hosting setup</li>
+                    <li>Performance optimization</li>
+                    <li>Monthly support for 1–2 months</li>
+                    <li>Email setup</li>
+                    <li>Analytics tracking setup</li>
+                    <li><strong>R3,000–R5,000+ (or ~$200–$350 internationally)</strong></li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="hidden">
+            <form action="https://formsubmit.co/tshiamobusiness01@gmail.com" method="POST">
+                <div class="contact-box">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name" placeholder="first-name" required>
+                <label for="lastst-name">Last Name</label>
+                <input type="text" name="first-name" id="last-name" placeholder="last-name" required>
+                </div> 
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="joekerry@steve.com" required>
+                <textarea name="message" id="message" rows="10"></textarea>
+                <button type="submit" class="submit" id="submitBtn">Submit</button>
+            </form>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <ul class="footer-links">
+                  <li><a href="https://tshiamobusiness01@gmail.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="https://www.tiktok.com/@thehermit_03?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a></li>
+                  <li><a href="https://github.com/Ragnar-x" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/tshiamolekuba/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+                <p>&copy; 2025 Tshiamo Lekuba.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
